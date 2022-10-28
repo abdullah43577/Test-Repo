@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, blue, red);
+  background-size: cover;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  display: grid;
+  place-content: center;
+}
+
+/* main {
+  height: 400px;
+  width: 400px;
+  background-color: #f3f3f3;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+} */
+
+main {
+  height: 400px;
+  width: 700px;
+  background-color: white;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+main > .back {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+main > .front {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+div.images-container {
+  width: 500px;
+}
+
+div.images-container > img {
+  width: 100%;
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+  main {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+#logo {
+  max-width: 200px;
+  position: absolute;
+  top: 10px;
+  left: 45%;
+}
