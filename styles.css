@@ -16,15 +16,6 @@ body {
   place-content: center;
 }
 
-/* main {
-  height: 400px;
-  width: 400px;
-  background-color: #f3f3f3;
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-} */
-
 main {
   height: 400px;
   width: 700px;
@@ -32,23 +23,6 @@ main {
   position: relative;
   display: grid;
   place-content: center;
-}
-
-main > .back {
-  position: absolute;
-  top: 50%;
-  left: 10px;
-}
-
-main > .front {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-}
-
-i {
-  font-size: 25px;
-  cursor: pointer;
 }
 
 div.images-container {
